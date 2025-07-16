@@ -1,23 +1,26 @@
 import { BotMessageSquare, Moon, Sun } from "lucide-react";
 import type { ReactNode } from "react";
-import { useTheme } from "../../components/theme-provider";
-import { Button } from "../../components/ui/button";
+import { useTheme } from "../theme-provider";
+import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 type MainProps = {
   children: ReactNode;
 };
 
-export function Main({ children }: MainProps) {
+export function MainLayout({ children }: MainProps) {
   const { setTheme, theme } = useTheme();
 
   return (
     <div className="min-h-screen px-4 py-8">
       <div className="mx-auto max-w-5xl">
         <div className="mb-6 flex items-end gap-6 border-b p-2 text-primary">
-          <h2 className="scroll-m-20 font-semibold text-3xl text-emerald-600 tracking-tight first:mt-0 dark:text-emerald-500">
-            Letmeask
-            <BotMessageSquare className="-translate-y-0.5 ml-2 inline-block" />
-          </h2>
+          <Link to="/">
+            <h2 className="scroll-m-20 font-semibold text-3xl text-emerald-600 tracking-tight first:mt-0 dark:text-emerald-500">
+              Letmeask
+              <BotMessageSquare className="-translate-y-0.5 ml-2 inline-block" />
+            </h2>
+          </Link>
           <p className="hidden md:block">
             Converse com seus criadores de conteúdo rapidamente
           </p>

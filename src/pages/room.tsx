@@ -28,7 +28,7 @@ export function Room() {
           <Link to={`/room/${roomId}/audio`}>
             <Button className="flex items-center gap-2" variant="secondary">
               <Radio className="size-4" />
-              Gravar Áudio
+              Gravar Áudio do Conteúdo da Sala
             </Button>
           </Link>
         </div>

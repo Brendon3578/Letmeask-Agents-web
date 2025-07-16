@@ -3,6 +3,7 @@ export type RawQuestion = {
   question: string;
   answer?: string | null;
   createdAt: string;
+  isGeneratingAnswer?: boolean; // apenas do front
 };
 
 export type CreateQuestionRequest = {
@@ -11,6 +12,7 @@ export type CreateQuestionRequest = {
 
 export type CreateQuestionResponse = {
   questionId: string;
+  answer: string | null;
 };
 
 export type GetRoomQuestionsResponse = RawQuestion[];

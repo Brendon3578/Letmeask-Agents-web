@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 import { useCreateQuestion } from "../api/hooks/use-create-question";
+import { Loader2 } from "lucide-react";
 
 // Esquema de validação no mesmo arquivo conforme solicitado
 const createQuestionSchema = z.object({
@@ -50,6 +51,8 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
     form.reset();
   }
 
+  const { isSubmitting } = form.formState;
+
   return (
     <Card>
       <CardHeader>
@@ -73,6 +76,7 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
                   <FormControl>
                     <Textarea
                       className="min-h-[100px]"
+                      disabled={isSubmitting}
                       placeholder="O que você gostaria de saber?"
                       {...field}
                     />
@@ -82,7 +86,10 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
               )}
             />
 
-            <Button type="submit">Enviar pergunta</Button>
+            <Button disabled={isSubmitting} type="submit">
+              Enviar pergunta
+              {isSubmitting && <Loader2 className="size-4 animate-spin" />}
+            </Button>
           </form>
         </Form>
       </CardContent>
