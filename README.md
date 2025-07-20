@@ -21,16 +21,19 @@ Ele também serve como uma aplicação prática para explorar conceitos como:
 
 <p align="center">
     <kbd>
-        <img src="./.github/image01.png" style="border-radius: 5px" alt="Exemplo de execução" width="913px">
+        <img src="./.github/image01.png" style="border-radius: 5px" alt="Exemplo de execução" width="800px">
     </kbd>
 </p>
 
 <p align="center">
     <kbd>
-        <img src="./.github/image02.png" style="border-radius: 5px" alt="Exemplo de execução" width="450px">
+        <img src="./.github/image02.png" style="border-radius: 5px" alt="Exemplo de execução" width="800px">
     </kbd>
+</p>
+
+<p align="center">
     <kbd>
-        <img src="./.github/image03.png" style="border-radius: 5px" alt="Exemplo de execução" width="450px">
+        <img src="./.github/image03.png" style="border-radius: 5px" alt="Exemplo de execução" width="800px">
     </kbd>
 </p>
 
