@@ -11,15 +11,38 @@
 
 Este projeto é o frontend da plataforma **Letmeask Agents**, responsável pela interface interativa onde os usuários podem criar salas, enviar perguntas e visualizar respostas - sejam elas geradas manualmente ou por IA.
 
-A aplicação permite:
+Ele também serve como uma aplicação prática para explorar conceitos como:
 
-- Criação de salas públicas ou privadas  
-- Envio de perguntas pelos visitantes  
-- Visualização de respostas manuais e automáticas (IA)  
-- Upload de áudios pelo autor  
-- Interface moderna, responsiva e acessível
+- Transcrição e compreensão de linguagem natural (NLU)
+- Uso de IA generativa para educação
+- Banco de dados vetoriais e embeddings
+- Arquitetura moderna full-stack escalável
+- Ideal para instituições, cursos online e qualquer cenário que envolva ensino com sessões gravadas.
+
+<p align="center">
+    <kbd>
+        <img src="./.github/image01.png" style="border-radius: 5px" alt="Exemplo de execução" width="913px">
+    </kbd>
+</p>
+
+<p align="center">
+    <kbd>
+        <img src="./.github/image02.png" style="border-radius: 5px" alt="Exemplo de execução" width="450px">
+    </kbd>
+    <kbd>
+        <img src="./.github/image03.png" style="border-radius: 5px" alt="Exemplo de execução" width="450px">
+    </kbd>
+</p>
 
 Link do repositório da aplicação Backend: [Letmeask Agents - Server](https://github.com/Brendon3578/Letmeask-Agents-server)
+
+## 🔮 Descrição do Projeto
+
+Letmeask Agents é uma plataforma web de perguntas e respostas (Q&A) voltada para o ambiente educacional. Ela permite que autores criem salas interativas, compartilhem áudios explicativos sobre um conteúdo e recebam perguntas dos participantes.
+
+O grande diferencial do projeto é a integração com a IA generativa Gemini, que transcreve os áudios enviados, gera representações vetoriais (embeddings) e, com base nisso, fornece respostas automáticas e contextuais para as perguntas feitas nas salas.
+
+A aplicação permite criar salas de salas para que usuários façam perguntas, e a própria IA gera a resposta com base no conteúdo apresentado anteriormente pelo autor da sala.
 
 ---
 
