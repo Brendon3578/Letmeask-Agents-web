@@ -102,4 +102,6 @@ A aplicação estará disponível em <http://localhost:5173> por padrão.
 
 ---
 
-<h3 align="center"> Feito com ☕ por <a href="https://github.com/Brendon3578">Brendon Gomes</a> </h3>
+<h3 align="center">
+    Projeto feito com ☕ por <a href="https://github.com/Brendon3578">Brendon Gomes</a> durante a NLW Agents
+</h3>
